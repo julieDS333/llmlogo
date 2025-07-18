@@ -1,9 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Image Page</title>
+  <meta charset="UTF-8">
+  <title>Full Screen Image</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 </head>
-<body style="margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh;">
-  <img src="llm.png" alt="My Image" style="max-width: 100%; height: auto;" />
+<body>
+  <img src="llm.png" alt="Full Screen Image">
 </body>
 </html>
